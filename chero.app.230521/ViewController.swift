@@ -53,6 +53,9 @@ class ViewController: UIViewController {
 
     
     @IBAction func buttonTapped(_ sender: UIButton) {
+        
+
+        
         let buttons = [abutton, bbutton, cbutton, dbutton, ebutton, fbutton, gbutton, hbutton, ibutton, jbutton, kbutton, lbutton, mbutton, nbutton, obutton, pbutton, qbutton, rbutton, sbutton, tbutton, ubutton, vbutton]
 
         if let visibleTag = visibleButtonTag, visibleTag == sender.tag {
@@ -154,6 +157,7 @@ class ViewController: UIViewController {
     @IBAction func naturalTapped() {
         sandf.text = String(" ")
     }
+    
     
         
 }

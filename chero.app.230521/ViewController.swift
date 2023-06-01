@@ -7,8 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController2: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    var str = ""
+    var selectedButtonTag: Int?
     
     @IBOutlet weak var abutton: UIButton!
     @IBOutlet weak var bbutton: UIButton!
@@ -37,9 +39,6 @@ class ViewController: UIViewController {
     @IBOutlet var sandf: UILabel!
     @IBOutlet var lita: UILabel!
     
-    // 表示されているボタンのタグを追跡
-    var visibleButtonTag: Int?
-    
     @IBOutlet var sharp: UIButton!
     @IBOutlet var flat: UIButton!
     @IBOutlet var natural: UIButton!
@@ -50,14 +49,12 @@ class ViewController: UIViewController {
         sandf.text = ""
         lita.text = ""
     }
-
     
     @IBAction func buttonTapped(_ sender: UIButton) {
-        
-
+    
         
         let buttons = [abutton, bbutton, cbutton, dbutton, ebutton, fbutton, gbutton, hbutton, ibutton, jbutton, kbutton, lbutton, mbutton, nbutton, obutton, pbutton, qbutton, rbutton, sbutton, tbutton, ubutton, vbutton]
-
+        
         if let visibleTag = visibleButtonTag, visibleTag == sender.tag {
             // ボタンの背景色を設定
             for button in buttons {
@@ -77,7 +74,7 @@ class ViewController: UIViewController {
             // 押されたボタンを黒色に変更
             sender.backgroundColor = UIColor.black
         }
-    
+        
         if sender == abutton {
             doremi.text = "ド"
             lita.text = ""
@@ -145,22 +142,30 @@ class ViewController: UIViewController {
             lita.text = ""
         }
     }
-        
-    @IBAction func sharpTapped() {
-        //ラベルに反映
-        sandf.text = String("#")
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "to2" {
+            let nextView = segue.destination as! ViewController2
+            if let buttonText = abutton.titleLabel?.text {
+                    nextView.selectedButtonTitle = buttonText
+                }
+            if let buttonText = bbutton.titleLabel?.text {
+                    nextView.selectedButtonTitle = buttonText
+                }
+            }
         }
+
+            
+    @IBAction func sharpTapped() {
+                //ラベルに反映
+                sandf.text = String("#")
+    }
     @IBAction func flatTapped() {
-        //ラベルに反映
-        sandf.text = String("♭")
+                //ラベルに反映
+                sandf.text = String("♭")
     }
     @IBAction func naturalTapped() {
-        sandf.text = String(" ")
-    }
-    
-    
+                sandf.text = String(" ")
         
+    }
+            
 }
-
-
-

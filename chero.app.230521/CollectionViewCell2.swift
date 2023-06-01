@@ -5,25 +5,26 @@
 //  Created by 酒井実 on 2023/05/31.
 //
 
+
 import UIKit
 
-class CollectionViewCell2: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class CollectionViewCell2: UICollectionViewCell{
     @IBOutlet weak var ontei: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func awakeFromNib() {
+        super.awakeFromNib()
         ontei.backgroundColor = UIColor.lightGray
+        ontei.layer.cornerRadius = 17.5
     }
-    
     // MARK: - UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // セクション内のアイテム数を返す処理を実装する必要があります
+        
         return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // セルを生成して返す処理を実装する必要があります
+        
         return UICollectionViewCell()
     }
 }

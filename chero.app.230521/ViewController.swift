@@ -61,93 +61,94 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         sandf.text = ""
         lita.text = ""
     }
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
         
-    func buttonTapped(_ sender: UIButton) {
-            
-            let buttons = [bbutton, cbutton, dbutton, ebutton, fbutton, gbutton, hbutton, ibutton, jbutton, kbutton, mbutton, nbutton, obutton, pbutton, qbutton, rbutton, sbutton, tbutton, ubutton, vbutton]
-            
-            if let selectedTag = selectedButtonTag, selectedTag == sender.tag {
-                // ボタンの背景色を設定
-                for button in buttons {
-                    if button == sender {
-                        // 押されたボタンを黒色に変更
-                        button?.backgroundColor = UIColor.black
-                    } else {
-                        // 他のボタンを灰色に変更
-                        button?.backgroundColor = UIColor.lightGray
-                    }
-                }
-            } else {
-                // 全てのボタンを灰色に設定
-                for button in buttons {
+        let buttons = [bbutton, cbutton, dbutton, ebutton, fbutton, gbutton, hbutton, ibutton, jbutton, kbutton, mbutton, nbutton, obutton, pbutton, qbutton, rbutton, sbutton, tbutton, ubutton, vbutton]
+        
+        if let selectedTag = selectedButtonTag, selectedTag == sender.tag {
+            // ボタンの背景色を設定
+            for button in buttons {
+                if button == sender {
+                    // 押されたボタンを黒色に変更
+                    button?.backgroundColor = UIColor.black
+                } else {
+                    // 他のボタンを灰色に変更
                     button?.backgroundColor = UIColor.lightGray
                 }
-                // 押されたボタンを黒色に変更
-                sender.backgroundColor = UIColor.black
             }
-            
-            if sender == bbutton {
-                doremi.text = "ラ"
-                lita.text = ""
-            } else if sender == cbutton {
-                doremi.text = "フ"
-                lita.text = "ア"
-            } else if sender == dbutton {
-                doremi.text = "レ"
-                lita.text = ""
-            } else if sender == ebutton {
-                doremi.text = "シ"
-                lita.text = ""
-            } else if sender == fbutton {
-                doremi.text = "ソ"
-                lita.text = ""
-            } else if sender == gbutton {
-                doremi.text = "ミ"
-                lita.text = ""
-            } else if sender == hbutton {
-                doremi.text = "ド"
-                lita.text = ""
-            } else if sender == ibutton {
-                doremi.text = "ラ"
-                lita.text = ""
-            } else if sender == jbutton {
-                doremi.text = "フ"
-                lita.text = "ア"
-            } else if sender == kbutton {
-                doremi.text = "レ"
-                lita.text = ""
-            } else if sender == mbutton {
-                doremi.text = "ソ"
-                lita.text = ""
-            } else if sender == nbutton {
-                doremi.text = "ミ"
-                lita.text = ""
-            } else if sender == obutton {
-                doremi.text = "ド"
-                lita.text = ""
-            } else if sender == pbutton {
-                doremi.text = "ラ"
-                lita.text = ""
-            } else if sender == qbutton {
-                doremi.text = "フ"
-                lita.text = "ア"
-            } else if sender == rbutton {
-                doremi.text = "レ"
-                lita.text = ""
-            } else if sender == sbutton {
-                doremi.text = "シ"
-                lita.text = ""
-            } else if sender == tbutton {
-                doremi.text = "ソ"
-                lita.text = ""
-            } else if sender == ubutton {
-                doremi.text = "ミ"
-                lita.text = ""
-            } else if sender == vbutton {
-                doremi.text = "ド"
-                lita.text = ""
+        } else {
+            // 全てのボタンを灰色に設定
+            for button in buttons {
+                button?.backgroundColor = UIColor.lightGray
             }
-                
+            // 押されたボタンを黒色に変更
+            sender.backgroundColor = UIColor.black
+        }
+        
+        if sender == bbutton {
+            doremi.text = "ラ"
+            lita.text = ""
+        } else if sender == cbutton {
+            doremi.text = "フ"
+            lita.text = "ア"
+        } else if sender == dbutton {
+            doremi.text = "レ"
+            lita.text = ""
+        } else if sender == ebutton {
+            doremi.text = "シ"
+            lita.text = ""
+        } else if sender == fbutton {
+            doremi.text = "ソ"
+            lita.text = ""
+        } else if sender == gbutton {
+            doremi.text = "ミ"
+            lita.text = ""
+        } else if sender == hbutton {
+            doremi.text = "ド"
+            lita.text = ""
+        } else if sender == ibutton {
+            doremi.text = "ラ"
+            lita.text = ""
+        } else if sender == jbutton {
+            doremi.text = "フ"
+            lita.text = "ア"
+        } else if sender == kbutton {
+            doremi.text = "レ"
+            lita.text = ""
+        } else if sender == mbutton {
+            doremi.text = "ソ"
+            lita.text = ""
+        } else if sender == nbutton {
+            doremi.text = "ミ"
+            lita.text = ""
+        } else if sender == obutton {
+            doremi.text = "ド"
+            lita.text = ""
+        } else if sender == pbutton {
+            doremi.text = "ラ"
+            lita.text = ""
+        } else if sender == qbutton {
+            doremi.text = "フ"
+            lita.text = "ア"
+        } else if sender == rbutton {
+            doremi.text = "レ"
+            lita.text = ""
+        } else if sender == sbutton {
+            doremi.text = "シ"
+            lita.text = ""
+        } else if sender == tbutton {
+            doremi.text = "ソ"
+            lita.text = ""
+        } else if sender == ubutton {
+            doremi.text = "ミ"
+            lita.text = ""
+        } else if sender == vbutton {
+            doremi.text = "ド"
+            lita.text = ""
+        }
+        
+        
         if sender == vbutton && sharpgaTapped == false && flatgaTapped == false {
             konooto = 1
         } else if sender == kbutton && sharpgaTapped == false && flatgaTapped == false {
@@ -268,28 +269,28 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             konooto = 32
         }
         
-        }
+    }
         
-        func sharpTapped() {
+        @IBAction func sharpTapped() {
             //ラベルに反映
             sandf.text = String("#")
             sharpgaTapped = true
             flatgaTapped = false
         }
-        func flatTapped() {
+        @IBAction func flatTapped() {
             //ラベルに反映
             sandf.text = String("♭")
             flatgaTapped = true
             sharpgaTapped = false
         }
-        func naturalTapped() {
+        @IBAction func naturalTapped() {
             sandf.text = String(" ")
             sharpgaTapped = false
             flatgaTapped = false
             
         }
         
-        func back(sender: UIStoryboardSegue){
+        @IBAction func back(sender: UIStoryboardSegue){
         }
 
     //次の画面に値を渡す処理

@@ -9,10 +9,8 @@ import UIKit
 
 class ViewController2: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    var str = ""
-    var selectedButtonTag: Int?
-    var selectedButtonTitle: String?
     
+    var konooto: String = ""
     var recievedButtonInfo: Bool = false
     
     @IBOutlet weak var collectionView: UICollectionView! {
@@ -50,7 +48,7 @@ class ViewController2: UIViewController, UICollectionViewDelegate, UICollectionV
         
         sandf2.text = "\(recievedButtonInfo)"
 
-        
+        var konooto: String = "(\(recievedButtonInfo)"
     }
     
     // UICollectionViewDataSourceのメソッドを実装する

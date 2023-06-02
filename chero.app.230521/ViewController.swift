@@ -23,8 +23,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var sharpgaTapped: Bool = false
     var flatgaTapped: Bool = false
     var selectedButtonTag: Int?
+    var konooto = 0
     
-    @IBOutlet weak var abutton: UIButton!
     @IBOutlet weak var bbutton: UIButton!
     @IBOutlet weak var cbutton: UIButton!
     @IBOutlet weak var dbutton: UIButton!
@@ -35,7 +35,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var ibutton: UIButton!
     @IBOutlet weak var jbutton: UIButton!
     @IBOutlet weak var kbutton: UIButton!
-    @IBOutlet weak var lbutton: UIButton!
     @IBOutlet weak var mbutton: UIButton!
     @IBOutlet weak var nbutton: UIButton!
     @IBOutlet weak var obutton: UIButton!
@@ -65,7 +64,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     func buttonTapped(_ sender: UIButton) {
             
-            let buttons = [abutton, bbutton, cbutton, dbutton, ebutton, fbutton, gbutton, hbutton, ibutton, jbutton, kbutton, lbutton, mbutton, nbutton, obutton, pbutton, qbutton, rbutton, sbutton, tbutton, ubutton, vbutton]
+            let buttons = [bbutton, cbutton, dbutton, ebutton, fbutton, gbutton, hbutton, ibutton, jbutton, kbutton, mbutton, nbutton, obutton, pbutton, qbutton, rbutton, sbutton, tbutton, ubutton, vbutton]
             
             if let selectedTag = selectedButtonTag, selectedTag == sender.tag {
                 // ボタンの背景色を設定
@@ -87,10 +86,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 sender.backgroundColor = UIColor.black
             }
             
-            if sender == abutton {
-                doremi.text = "ド"
-                lita.text = ""
-            } else if sender == bbutton {
+            if sender == bbutton {
                 doremi.text = "ラ"
                 lita.text = ""
             } else if sender == cbutton {
@@ -107,6 +103,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 lita.text = ""
             } else if sender == gbutton {
                 doremi.text = "ミ"
+                lita.text = ""
             } else if sender == hbutton {
                 doremi.text = "ド"
                 lita.text = ""
@@ -118,9 +115,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 lita.text = "ア"
             } else if sender == kbutton {
                 doremi.text = "レ"
-                lita.text = ""
-            } else if sender == lbutton {
-                doremi.text = "シ"
                 lita.text = ""
             } else if sender == mbutton {
                 doremi.text = "ソ"
@@ -153,17 +147,140 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 doremi.text = "ド"
                 lita.text = ""
             }
+                
+        if sender == vbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 1
+        } else if sender == kbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 3
+        } else if sender == ubutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 5
+        } else if sender == jbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 6
+        } else if sender == tbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 8
+        } else if sender == ibutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 10
+        } else if sender == sbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 12
+        } else if sender == hbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 13
+        } else if sender == rbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 15
+        } else if sender == gbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 17
+        } else if sender == qbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 18
+        } else if sender == fbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 20
+        } else if sender == pbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 22
+        } else if sender == ebutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 24
+        } else if sender == obutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 25
+        } else if sender == dbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 27
+        } else if sender == nbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 29
+        } else if sender == cbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 30
+        } else if sender == mbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 32
+        } else if sender == bbutton && sharpgaTapped == false && flatgaTapped == false {
+            konooto = 33
+            
+        } else if sender == kbutton && flatgaTapped == true {
+            konooto = 2
+        } else if sender == ubutton && flatgaTapped == true {
+            konooto = 4
+        } else if sender == jbutton && flatgaTapped == true {
+            konooto = 5
+        } else if sender == tbutton && flatgaTapped == true {
+            konooto = 7
+        } else if sender == ibutton && flatgaTapped == true {
+            konooto = 9
+        } else if sender == sbutton && flatgaTapped == true {
+            konooto = 11
+        } else if sender == hbutton && flatgaTapped == true {
+            konooto = 12
+        } else if sender == rbutton && flatgaTapped == true {
+            konooto = 14
+        } else if sender == gbutton && flatgaTapped == true {
+            konooto = 16
+        } else if sender == qbutton && flatgaTapped == true {
+            konooto = 17
+        } else if sender == fbutton && flatgaTapped == true {
+            konooto = 19
+        } else if sender == pbutton && flatgaTapped == true {
+            konooto = 21
+        } else if sender == ebutton && flatgaTapped == true {
+            konooto = 23
+        } else if sender == obutton && flatgaTapped == true {
+            konooto = 24
+        } else if sender == dbutton && flatgaTapped == true {
+            konooto = 26
+        } else if sender == nbutton && flatgaTapped == true {
+            konooto = 28
+        } else if sender == cbutton && flatgaTapped == true {
+            konooto = 29
+        } else if sender == mbutton && flatgaTapped == true {
+            konooto = 31
+        } else if sender == bbutton && flatgaTapped == true {
+            konooto = 32
+            
+        } else if sender == vbutton && sharpgaTapped == true {
+            konooto = 2
+        } else if sender == kbutton && sharpgaTapped == true {
+            konooto = 4
+        } else if sender == ubutton && sharpgaTapped == true {
+            konooto = 6
+        } else if sender == jbutton && sharpgaTapped == true {
+            konooto = 7
+        } else if sender == tbutton && sharpgaTapped == true {
+            konooto = 9
+        } else if sender == ibutton && sharpgaTapped == true {
+            konooto = 11
+        } else if sender == sbutton && sharpgaTapped == true {
+            konooto = 13
+        } else if sender == hbutton && sharpgaTapped == true {
+            konooto = 14
+        } else if sender == rbutton && sharpgaTapped == true {
+            konooto = 16
+        } else if sender == gbutton && sharpgaTapped == true {
+            konooto = 18
+        } else if sender == qbutton && sharpgaTapped == true {
+            konooto = 19
+        } else if sender == fbutton && sharpgaTapped == true {
+            konooto = 21
+        } else if sender == pbutton && sharpgaTapped == true {
+            konooto = 23
+        } else if sender == ebutton && sharpgaTapped == true {
+            konooto = 25
+        } else if sender == obutton && sharpgaTapped == true {
+            konooto = 26
+        } else if sender == dbutton && sharpgaTapped == true {
+            konooto = 28
+        } else if sender == nbutton && sharpgaTapped == true {
+            konooto = 30
+        } else if sender == cbutton && sharpgaTapped == true {
+            konooto = 31
+        } else if sender == mbutton && sharpgaTapped == true {
+            konooto = 32
+        }
+        
         }
         
         func sharpTapped() {
             //ラベルに反映
             sandf.text = String("#")
             sharpgaTapped = true
+            flatgaTapped = false
         }
         func flatTapped() {
             //ラベルに反映
             sandf.text = String("♭")
             flatgaTapped = true
+            sharpgaTapped = false
         }
         func naturalTapped() {
             sandf.text = String(" ")
@@ -174,17 +291,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         func back(sender: UIStoryboardSegue){
         }
-        
-                
+
+    //次の画面に値を渡す処理
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "to2" {
-                let nextView = segue.destination as! ViewController2
-                
-                nextView.recievedButtonInfo = sharpgaTapped
-                nextView.recievedButtonInfo = flatgaTapped
-            }
-        }
-        
+
+        //次の画面を変数化する
+        let ViewController2 = segue.destination as! ViewController2
+
+        //渡したい変数を書く
+        ViewController2.konooto2 = konooto
+
+
+    }
+    
     }
     
 

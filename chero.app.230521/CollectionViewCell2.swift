@@ -10,6 +10,7 @@ import UIKit
 
 class CollectionViewCell2: UICollectionViewCell{
     @IBOutlet weak var ontei: UIButton!
+    var konootoc = 0
     
     // セル内のボタンの色を設定するメソッド
     func setButtonColor(_ color: UIColor) {
@@ -32,4 +33,7 @@ class CollectionViewCell2: UICollectionViewCell{
         
         return UICollectionViewCell()
     }
+
 }
+
+

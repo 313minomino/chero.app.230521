@@ -11,6 +11,11 @@ import UIKit
 class CollectionViewCell2: UICollectionViewCell{
     @IBOutlet weak var ontei: UIButton!
     
+    // セル内のボタンの色を設定するメソッド
+    func setButtonColor(_ color: UIColor) {
+        ontei.backgroundColor = color
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         ontei.backgroundColor = UIColor.lightGray

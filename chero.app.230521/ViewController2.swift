@@ -12,7 +12,9 @@ class ViewController2: UIViewController, UICollectionViewDelegate, UICollectionV
     var str = ""
     var selectedButtonTag: Int?
     var selectedButtonTitle: String?
-
+    
+    var konooto2: Int?
+    
     
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
@@ -24,13 +26,40 @@ class ViewController2: UIViewController, UICollectionViewDelegate, UICollectionV
             layout.minimumInteritemSpacing = 0
         }
     }
-    @IBOutlet weak var Abutton: UIButton!
-    @IBOutlet weak var Dbutton: UIButton!
-    @IBOutlet weak var Cbutton: UIButton!
-    @IBOutlet weak var Gbutton: UIButton!
+    @IBOutlet weak var otoAbutton: UIButton!
+    @IBOutlet weak var otoDbutton: UIButton!
+    @IBOutlet weak var otoCbutton: UIButton!
+    @IBOutlet weak var otoGbutton: UIButton!
     @IBOutlet var doremi2: UILabel!
     @IBOutlet var sandf2: UILabel!
     @IBOutlet var lita2: UILabel!
+    
+    @IBOutlet weak var abutton: UIButton!
+    @IBOutlet weak var bbutton: UIButton!
+    @IBOutlet weak var cbutton: UIButton!
+    @IBOutlet weak var dbutton: UIButton!
+    @IBOutlet weak var ebutton: UIButton!
+    @IBOutlet weak var fbutton: UIButton!
+    @IBOutlet weak var gbutton: UIButton!
+    @IBOutlet weak var hbutton: UIButton!
+    @IBOutlet weak var ibutton: UIButton!
+    @IBOutlet weak var jbutton: UIButton!
+    @IBOutlet weak var kbutton: UIButton!
+    @IBOutlet weak var lbutton: UIButton!
+    @IBOutlet weak var mbutton: UIButton!
+    @IBOutlet weak var nbutton: UIButton!
+    @IBOutlet weak var obutton: UIButton!
+    @IBOutlet weak var pbutton: UIButton!
+    @IBOutlet weak var qbutton: UIButton!
+    @IBOutlet weak var rbutton: UIButton!
+    @IBOutlet weak var sbutton: UIButton!
+    @IBOutlet weak var tbutton: UIButton!
+    @IBOutlet weak var ubutton: UIButton!
+    @IBOutlet weak var vbutton: UIButton!
+    
+    @IBOutlet var sharp: UIButton!
+    @IBOutlet var flat: UIButton!
+    @IBOutlet var natural: UIButton!
     
     // 選択されたボタンのタグを保持するプロパティ
     
@@ -41,10 +70,10 @@ class ViewController2: UIViewController, UICollectionViewDelegate, UICollectionV
         collectionView.register(UINib(nibName: "CollectionViewCell2", bundle: nil), forCellWithReuseIdentifier: "CollectionCell")
         
         // Do any additional setup after loading the view.
-        Abutton.layer.cornerRadius = 17.5
-        Dbutton.layer.cornerRadius = 17.5
-        Cbutton.layer.cornerRadius = 17.5
-        Gbutton.layer.cornerRadius = 17.5
+        otoAbutton.layer.cornerRadius = 17.5
+        otoDbutton.layer.cornerRadius = 17.5
+        otoCbutton.layer.cornerRadius = 17.5
+        otoGbutton.layer.cornerRadius = 17.5
         
         
     }
@@ -57,25 +86,50 @@ class ViewController2: UIViewController, UICollectionViewDelegate, UICollectionV
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath)
         
-        // セル内のボタンの色を設定する
-        if let button = cell.contentView.viewWithTag(1) as? UIButton {
-            // ボタンに応じた色を設定するロジックを記述する
-            switch selectedButtonTag {
-            case abutton.tag:
-                button.backgroundColor = UIColor.red
-            case bbutton.tag:
-                button.backgroundColor = UIColor.blue
-            case cbutton.tag:
-                button.backgroundColor = UIColor.green
-                // 他のボタンに対する色の設定を追加する
-            default:
-                button.backgroundColor = UIColor.gray
+        // ボタンの色を設定するメソッド
+        func setButtonColor(_ buttonTag: Int, color: UIColor) {
+            if let button = cell.contentView.viewWithTag(buttonTag) as? UIButton {
+                button.backgroundColor = color
             }
         }
         
-        return cell
+        // オレンジ色の設定
+        let orangeColor = UIColor.orange
         
+        // セルごとに対応するボタンのタグを設定
+        let buttonTag: Int
+        switch indexPath.item {
+        case 0:
+            buttonTag = ubutton.tag
+        case 1:
+            buttonTag = ubutton.tag
+        case 3:
+            buttonTag = tbutton.tag
+        case 2:
+            buttonTag = ubutton.tag
+            // ... 他のセルの設定 ...
+        default:
+            buttonTag = 0
+        }
+        
+        // pボタン、rボタン、tボタン、vボタンが押された場合は、g,c,d,aボタンの色をオレンジに設定
+        if selectedButtonTag == pbutton.tag || selectedButtonTag == rbutton.tag || selectedButtonTag == tbutton.tag || selectedButtonTag == vbutton.tag {
+            let buttons = [gbutton, cbutton, dbutton, abutton]
+            for button in buttons {
+                button?.backgroundColor = orangeColor
+            }
+        }
+        // その他の場合は、全てのボタンをグレーに設定
+        else {
+            let buttons = [abutton, bbutton, cbutton, dbutton, ebutton, fbutton, gbutton, hbutton, ibutton, jbutton, kbutton, lbutton, mbutton, nbutton, obutton, pbutton, qbutton, rbutton, sbutton, tbutton, ubutton, vbutton]
+            for button in buttons {
+                button?.backgroundColor = UIColor.gray
+            }
+        }
+        
+        // ボタンの色を設定
+        setButtonColor(buttonTag, color: orangeColor)
+        
+        return cell
     }
-    if 
 }
-

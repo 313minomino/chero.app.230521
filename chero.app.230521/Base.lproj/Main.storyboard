@@ -639,8 +639,11 @@
                         <outlet property="Gbutton" destination="FvX-mP-po7" id="Zo2-Zy-9Ti"/>
                         <outlet property="collectionView" destination="1sY-KW-Mvz" id="2uH-sf-EiU"/>
                         <outlet property="doremi" destination="u4e-MB-wIv" id="lVc-dU-hDy"/>
+                        <outlet property="doremi2" destination="u4e-MB-wIv" id="nsz-EZ-MDy"/>
                         <outlet property="lita" destination="zHx-gQ-gdn" id="0U9-F5-t5l"/>
+                        <outlet property="lita2" destination="zHx-gQ-gdn" id="Mv0-BR-ScR"/>
                         <outlet property="sandf" destination="Mhi-rD-DQ4" id="eRJ-5A-FPu"/>
+                        <outlet property="sandf2" destination="Mhi-rD-DQ4" id="0F2-3M-QuH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ba0-g8-zeE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

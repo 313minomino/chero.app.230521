@@ -387,18 +387,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="sharpTapped" destination="7Pl-hp-nLD" eventType="touchUpInside" id="kQD-S2-ufd"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rf1-OR-fMi">
                                 <rect key="frame" x="147" y="601" width="98" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="flatTapped" destination="7Pl-hp-nLD" eventType="touchUpInside" id="vm0-Zp-Akw"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6d-BT-1tF">
                                 <rect key="frame" x="214" y="751" width="0.0" height="0.0"/>
@@ -437,9 +431,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="naturalTapped" destination="7Pl-hp-nLD" eventType="touchUpInside" id="KsS-oP-utx"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TlC-eJ-mtS"/>
@@ -515,7 +506,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="もどる"/>
                                 <connections>
-                                    <segue destination="7Pl-hp-nLD" kind="presentation" identifier="to1" modalPresentationStyle="fullScreen" id="tkU-2f-xx7"/>
+                                    <segue destination="fZK-N7-fWo" kind="unwind" unwindAction="backWithSender:" id="awT-xE-b23"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="開放弦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ee-yC-gvv">
@@ -633,20 +624,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="tcB-Pb-fI0"/>
                     <connections>
-                        <outlet property="Abutton" destination="SCs-mV-11W" id="Lwa-wf-D5i"/>
-                        <outlet property="Cbutton" destination="fPf-w3-9La" id="bO6-GB-Nun"/>
-                        <outlet property="Dbutton" destination="awf-mn-qcv" id="6Bb-Dx-9Z5"/>
-                        <outlet property="Gbutton" destination="FvX-mP-po7" id="Zo2-Zy-9Ti"/>
                         <outlet property="collectionView" destination="1sY-KW-Mvz" id="2uH-sf-EiU"/>
-                        <outlet property="doremi" destination="u4e-MB-wIv" id="lVc-dU-hDy"/>
                         <outlet property="doremi2" destination="u4e-MB-wIv" id="nsz-EZ-MDy"/>
-                        <outlet property="lita" destination="zHx-gQ-gdn" id="0U9-F5-t5l"/>
                         <outlet property="lita2" destination="zHx-gQ-gdn" id="Mv0-BR-ScR"/>
-                        <outlet property="sandf" destination="Mhi-rD-DQ4" id="eRJ-5A-FPu"/>
+                        <outlet property="otoAbutton" destination="SCs-mV-11W" id="nBD-Fu-If7"/>
+                        <outlet property="otoCbutton" destination="fPf-w3-9La" id="acs-px-t3B"/>
+                        <outlet property="otoDbutton" destination="awf-mn-qcv" id="1TJ-ny-jfM"/>
+                        <outlet property="otoGbutton" destination="FvX-mP-po7" id="goe-Ak-5ze"/>
                         <outlet property="sandf2" destination="Mhi-rD-DQ4" id="0F2-3M-QuH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ba0-g8-zeE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="fZK-N7-fWo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1397.709923664122" y="-2.1126760563380285"/>
         </scene>

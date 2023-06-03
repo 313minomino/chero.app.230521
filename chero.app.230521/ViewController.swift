@@ -289,9 +289,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             flatgaTapped = false
             
         }
-        
-        @IBAction func back(sender: UIStoryboardSegue){
-        }
 
     //次の画面に値を渡す処理
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

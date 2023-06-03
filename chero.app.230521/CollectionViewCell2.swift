@@ -10,7 +10,7 @@ import UIKit
 
 class CollectionViewCell2: UICollectionViewCell{
     @IBOutlet weak var ontei: UIButton!
-    var konootoc = 0
+    var konooto2 = 0
     
     // セル内のボタンの色を設定するメソッド
     func setButtonColor(_ color: UIColor) {
@@ -19,8 +19,9 @@ class CollectionViewCell2: UICollectionViewCell{
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        ontei.backgroundColor = UIColor.lightGray
+        setButtonColor(.lightGray)
         ontei.layer.cornerRadius = 17.5
+        
     }
     // MARK: - UICollectionViewDataSource
     

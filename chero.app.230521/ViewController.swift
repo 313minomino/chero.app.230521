@@ -62,6 +62,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         lita.text = ""
     }
     
+    @IBAction func back(sender: UIStoryboardSegue) {
+        
+    }
+    
     @IBAction func buttonTapped(_ sender: UIButton) {
         
         let buttons = [bbutton, cbutton, dbutton, ebutton, fbutton, gbutton, hbutton, ibutton, jbutton, kbutton, mbutton, nbutton, obutton, pbutton, qbutton, rbutton, sbutton, tbutton, ubutton, vbutton]

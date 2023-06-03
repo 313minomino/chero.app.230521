@@ -31,7 +31,7 @@ class CollectionViewCell2: UICollectionViewCell{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        print(indexPath.item)
         return UICollectionViewCell()
     }
 

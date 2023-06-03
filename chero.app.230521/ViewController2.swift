@@ -51,11 +51,6 @@ class ViewController2: UIViewController, UICollectionViewDelegate, UICollectionV
         otoDbutton.layer.cornerRadius = 17.5
         otoCbutton.layer.cornerRadius = 17.5
         otoGbutton.layer.cornerRadius = 17.5
-        
-        sandf2.text = "\(recievedButtonInfo)"
-
-        let konooto2String = "(\(recievedButtonInfo)"
-        print (konooto2String)
     }
     
     // UICollectionViewDataSourceのメソッドを実装する
@@ -73,131 +68,145 @@ class ViewController2: UIViewController, UICollectionViewDelegate, UICollectionV
         
         setButtonColor(.lightGray)
         
-        if cell.konooto2 == 2 && indexPath.row == 0 && indexPath.item == 0 {
+        if konooto2 == 1 {
+            otoGbutton.backgroundColor = UIColor.orange
+        }
+        if konooto2 == 8 {
+            otoCbutton.backgroundColor = UIColor.orange
+        }
+        if konooto2 == 15 {
+            otoDbutton.backgroundColor = UIColor.orange
+        }
+        if konooto2 == 22 {
+            otoAbutton.backgroundColor = UIColor.orange
+        }
+        
+        
+        if konooto2 == 2 && indexPath.item == 0 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 3 && indexPath.row == 0 && indexPath.item == 1 {
+        if konooto2 == 3 && indexPath.item == 4 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 4 && indexPath.row == 0 && indexPath.item == 2 {
+        if konooto2 == 4 && indexPath.item == 8 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 5 && indexPath.row == 0 && indexPath.item == 3 {
+        if konooto2 == 5 && indexPath.item == 12 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 6 && indexPath.row == 0 && indexPath.item == 4 {
+        if konooto2 == 6 && indexPath.item == 16 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 7 && indexPath.row == 0 && indexPath.item == 5 {
+        if konooto2 == 7 && indexPath.item == 20 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 8 && indexPath.row == 0 && indexPath.item == 6 {
+        if konooto2 == 8 && indexPath.item == 24 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 9 && (indexPath.row == 0 && indexPath.item == 7 || indexPath.row == 1 && indexPath.item == 0) {
+        if konooto2 == 9 && ( indexPath.item == 28 || indexPath.item == 1) {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 10 && (indexPath.row == 0 && indexPath.item == 8 || indexPath.row == 1 && indexPath.item == 1){
+        if konooto2 == 10 && (indexPath.item == 32 || indexPath.item == 5) {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 11 && (indexPath.row == 0 && indexPath.item == 9 || indexPath.row == 1 && indexPath.item == 2){
+        if konooto2 == 11 && ( indexPath.item == 36 || indexPath.item == 9) {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 12 && (indexPath.row == 0 && indexPath.item == 10 || indexPath.row == 1 && indexPath.item == 3) {
+        if konooto2 == 12 && ( indexPath.item == 40 || indexPath.item == 13) {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 13 && indexPath.row == 1 && indexPath.item == 4 {
+        if konooto2 == 13 && indexPath.item == 17 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 14 && indexPath.row == 1 && indexPath.item == 5 {
+        if konooto2 == 14 && indexPath.item == 21 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 15 && indexPath.row == 1 && indexPath.item == 6 {
+        if konooto2 == 15 && indexPath.item == 25 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 16 && (indexPath.row == 1 && indexPath.item == 7 || indexPath.row == 2 && indexPath.item == 0) {
+        if konooto2 == 16 && ( indexPath.item == 29 || indexPath.item == 2) {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 17 && (indexPath.row == 1 && indexPath.item == 8 || indexPath.row == 2 && indexPath.item == 1) {
+        if konooto2 == 17 && ( indexPath.item == 33 || indexPath.item == 6) {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 18 && (indexPath.row == 1 && indexPath.item == 9 || indexPath.row == 2 && indexPath.item == 2) {
+        if konooto2 == 18 &&  ( indexPath.item == 37 || indexPath.item == 10) {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 19 && (indexPath.row == 1 && indexPath.item == 10 || indexPath.row == 2 && indexPath.item == 3) {
+        if konooto2 == 19 && ( indexPath.item == 41 || indexPath.item == 14) {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 20 && indexPath.row == 2 && indexPath.item == 4  {
+        if konooto2 == 20 && indexPath.item == 18  {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 21 && indexPath.row == 2 && indexPath.item == 5  {
+        if konooto2 == 21 && indexPath.item == 22  {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 22 && indexPath.row == 2 && indexPath.item == 6  {
+        if konooto2 == 22 && indexPath.item == 26  {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 23 && (indexPath.row == 2 && indexPath.item == 7 || indexPath.row == 3 && indexPath.item == 0) {
+        if konooto2 == 23 && ( indexPath.item == 30 || indexPath.item == 3) {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 24 && (indexPath.row == 2 && indexPath.item == 8 || indexPath.row == 3 && indexPath.item == 1) {
+        if konooto2 == 24 && ( indexPath.item == 34 || indexPath.item == 7) {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 25 && (indexPath.row == 2 && indexPath.item == 9 || indexPath.row == 3 && indexPath.item == 2) {
+        if konooto2 == 25 && ( indexPath.item == 38 || indexPath.item == 11) {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 26 && (indexPath.row == 2 && indexPath.item == 10 || indexPath.row == 3 && indexPath.item == 3) {
+        if konooto2 == 26 && ( indexPath.item == 42 || indexPath.item == 15) {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 27 && indexPath.row == 3 && indexPath.item == 4 {
+        if konooto2 == 27 && indexPath.item == 19 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 28 && indexPath.row == 3 && indexPath.item == 5 {
+        if konooto2 == 28 && indexPath.item == 23 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 29 && indexPath.row == 3 && indexPath.item == 6 {
+        if konooto2 == 29 && indexPath.item == 27 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 30 && indexPath.row == 3 && indexPath.item == 7 {
+        if konooto2 == 30 && indexPath.item == 31 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 31 && indexPath.row == 3 && indexPath.item == 8 {
+        if konooto2 == 31 && indexPath.item == 35 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 32 && indexPath.row == 3 && indexPath.item == 9 {
+        if konooto2 == 32 && indexPath.item == 39 {
             setButtonColor(.orange)
         }
         
-        if cell.konooto2 == 33 && indexPath.row == 3 && indexPath.item == 10 {
+        if konooto2 == 33 && indexPath.item == 43 {
             setButtonColor(.orange)
         }
         

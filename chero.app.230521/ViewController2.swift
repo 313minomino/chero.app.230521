@@ -35,9 +35,6 @@ class ViewController2: UIViewController, UICollectionViewDelegate, UICollectionV
     @IBOutlet weak var otoDbutton: UIButton!
     @IBOutlet weak var otoCbutton: UIButton!
     @IBOutlet weak var otoGbutton: UIButton!
-    @IBOutlet var doremi2: UILabel!
-    @IBOutlet var sandf2: UILabel!
-    @IBOutlet var lita2: UILabel!
 
     // 選択されたボタンのタグを保持するプロパティ
     let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()

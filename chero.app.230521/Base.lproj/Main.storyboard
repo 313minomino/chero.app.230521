@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone 14 - 10 (2)" translatesAutoresizingMaskIntoConstraints="NO" id="5Vg-cf-3bm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone 14 - 10 (2)" translatesAutoresizingMaskIntoConstraints="NO" id="5Vg-cf-3bm">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3F-3e-5kp">
                                 <rect key="frame" x="232" y="195.66666666666666" width="48" height="33"/>
@@ -347,26 +346,14 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <segue destination="nDj-ak-WNu" kind="presentation" identifier="to2" id="Q9m-jz-Q2h"/>
+                                    <segue destination="nDj-ak-WNu" kind="presentation" id="Y7b-eB-0u9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQK-ZJ-yFO">
-                                <rect key="frame" x="29" y="601" width="98" height="99"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQK-ZJ-yFO">
+                                <rect key="frame" x="28" y="495" width="112" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="sharpTapped" destination="7Pl-hp-nLD" eventType="touchUpInside" id="qdd-vk-PLr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rf1-OR-fMi">
-                                <rect key="frame" x="147" y="601" width="98" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="flatTapped" destination="7Pl-hp-nLD" eventType="touchUpInside" id="dGL-Fd-O18"/>
-                                </connections>
+                                <buttonConfiguration key="configuration" style="plain" image="図1"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6d-BT-1tF">
                                 <rect key="frame" x="214" y="751" width="0.0" height="0.0"/>
@@ -400,18 +387,45 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9e-4C-oHM">
-                                <rect key="frame" x="270" y="601" width="97" height="99"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7O-qw-yVT">
+                                <rect key="frame" x="164" y="618" width="44" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="naturalTapped" destination="7Pl-hp-nLD" eventType="touchUpInside" id="Sc2-I2-iLy"/>
+                                    <action selector="sharpTapped" destination="7Pl-hp-nLD" eventType="touchUpInside" id="gwS-Yz-8yH"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzr-vW-WBA">
+                                <rect key="frame" x="-134" y="510" width="54" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="flatTapped" destination="7Pl-hp-nLD" eventType="touchUpInside" id="ie1-Zf-Xqg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rf1-OR-fMi">
+                                <rect key="frame" x="147" y="600" width="97" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9e-4C-oHM">
+                                <rect key="frame" x="268" y="600" width="101" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TlC-eJ-mtS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5Vg-cf-3bm" secondAttribute="trailing" id="2ht-a3-CCk"/>
+                            <constraint firstItem="5Vg-cf-3bm" firstAttribute="top" secondItem="wfU-fg-Zkq" secondAttribute="top" id="iiI-1o-MOF"/>
+                            <constraint firstAttribute="bottom" secondItem="5Vg-cf-3bm" secondAttribute="bottom" id="swA-ya-s0x"/>
+                            <constraint firstItem="5Vg-cf-3bm" firstAttribute="leading" secondItem="TlC-eJ-mtS" secondAttribute="leading" id="wNI-qu-dZa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wo9-f2-6Pp"/>
                     <connections>
@@ -445,7 +459,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Idq-GI-UkD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581" y="-2"/>
+            <point key="canvasLocation" x="580.91603053435108" y="-2.1126760563380285"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="hjM-vf-Wuc">
@@ -455,9 +469,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone 14 - 9 (3)" translatesAutoresizingMaskIntoConstraints="NO" id="aN6-k1-7d6">
-                                <rect key="frame" x="-11" y="-16" width="415" height="858"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone 14 - 12" translatesAutoresizingMaskIntoConstraints="NO" id="MjT-1e-XoO">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJ8-I7-79R">
                                 <rect key="frame" x="35" y="61" width="76" height="35"/>
@@ -567,7 +580,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1sY-KW-Mvz">
-                                <rect key="frame" x="164" y="177" width="200" height="665"/>
+                                <rect key="frame" x="164" y="183" width="200" height="665"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.090196087960000004" green="0.1294117719" blue="0.13725490870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="IsR-qF-bAZ">
@@ -635,6 +648,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JU2-rm-iio"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MjT-1e-XoO" firstAttribute="leading" secondItem="JU2-rm-iio" secondAttribute="leading" id="8SY-Q3-ntb"/>
+                            <constraint firstItem="MjT-1e-XoO" firstAttribute="bottom" secondItem="JU2-rm-iio" secondAttribute="bottom" id="Sso-dd-oba"/>
+                            <constraint firstItem="MjT-1e-XoO" firstAttribute="trailing" secondItem="JU2-rm-iio" secondAttribute="trailing" id="YWu-IK-HeP"/>
+                            <constraint firstItem="MjT-1e-XoO" firstAttribute="top" secondItem="JU2-rm-iio" secondAttribute="top" id="wi7-1n-nUD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tcB-Pb-fI0"/>
                     <connections>
@@ -653,8 +672,9 @@
     </scenes>
     <resources>
         <image name="iPhone 14 - 10 (2)" width="390" height="844"/>
-        <image name="iPhone 14 - 9 (3)" width="390" height="844"/>
+        <image name="iPhone 14 - 12" width="398" height="852"/>
         <image name="スクリーンショット 2023-05-30 11.14.47" width="764" height="942"/>
+        <image name="図1" width="1012" height="971"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

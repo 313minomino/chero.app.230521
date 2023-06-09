@@ -20,9 +20,8 @@
                         <rect key="frame" x="-7" y="-21" width="65" height="103"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyu-0v-jQO">
-                        <rect key="frame" x="8" y="13" width="35" height="35"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyu-0v-jQO">
+                        <rect key="frame" x="8" y="13" width="34" height="34"/>
                         <color key="backgroundColor" red="0.67450982329999998" green="0.67450982329999998" blue="0.67450982329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain"/>
@@ -31,6 +30,14 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" red="0.090196087960000004" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="iyu-0v-jQO" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="2EZ-D5-jWI"/>
+                <constraint firstItem="iyu-0v-jQO" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="8fI-B8-JLK"/>
+                <constraint firstItem="iyu-0v-jQO" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="AZL-Ki-Ly7"/>
+                <constraint firstItem="iyu-0v-jQO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="D6a-gX-2KM"/>
+                <constraint firstAttribute="bottom" secondItem="iyu-0v-jQO" secondAttribute="bottom" constant="13" id="Khc-fJ-743"/>
+                <constraint firstAttribute="trailing" secondItem="iyu-0v-jQO" secondAttribute="trailing" constant="8" id="zP2-IY-QWZ"/>
+            </constraints>
             <size key="customSize" width="518" height="213"/>
             <connections>
                 <outlet property="ontei" destination="iyu-0v-jQO" id="urA-0N-0R8"/>

@@ -60,6 +60,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         doremi.text = "" // ラベルを空白に設定
         sandf.text = ""
         lita.text = ""
+        
+        sharp.imageView?.contentMode = .scaleAspectFit
+        sharp.contentHorizontalAlignment = .fill
+        sharp.contentVerticalAlignment = .fill
+        
+        flat.imageView?.contentMode = .scaleAspectFit
+        flat.contentHorizontalAlignment = .fill
+        flat.contentVerticalAlignment = .fill
+        
+        natural.imageView?.contentMode = .scaleAspectFit
+        natural.contentHorizontalAlignment = .fill
+        natural.contentVerticalAlignment = .fill
     }
     
     @IBAction func back(sender: UIStoryboardSegue) {

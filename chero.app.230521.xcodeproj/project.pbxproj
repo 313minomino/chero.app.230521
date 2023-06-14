@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40D3B442A3943C0004E957E /* スライド1.png in Resources */ = {isa = PBXBuildFile; fileRef = C40D3B432A3943C0004E957E /* スライド1.png */; };
 		C41DD3802A19F40300B665C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41DD37F2A19F40300B665C9 /* AppDelegate.swift */; };
 		C41DD3822A19F40300B665C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41DD3812A19F40300B665C9 /* SceneDelegate.swift */; };
 		C41DD3842A19F40300B665C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41DD3832A19F40300B665C9 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C40D3B432A3943C0004E957E /* スライド1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スライド1.png"; sourceTree = "<group>"; };
 		C41DD37C2A19F40300B665C9 /* chero.app.230521.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chero.app.230521.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41DD37F2A19F40300B665C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C41DD3812A19F40300B665C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				C41DD37E2A19F40300B665C9 /* chero.app.230521 */,
+				C40D3B432A3943C0004E957E /* スライド1.png */,
 				C41DD37D2A19F40300B665C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C41DD3892A19F40400B665C9 /* Assets.xcassets in Resources */,
+				C40D3B442A3943C0004E957E /* スライド1.png in Resources */,
 				C41DD3872A19F40300B665C9 /* Main.storyboard in Resources */,
 				C41EADDE2A27751A00DC63A2 /* CollectionViewCell2.xib in Resources */,
 			);
@@ -287,6 +291,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VH2DSL544;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = chero.app.230521/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VH2DSL544;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = chero.app.230521/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
